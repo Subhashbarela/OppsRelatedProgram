@@ -11,7 +11,7 @@ namespace InterfaceAndConstructor
         static void Main(string[] args)
         {
 
-            Console.WriteLine("1: Constructor  \n2: Interface \n3: Static Constructor");
+            Console.WriteLine("1: Constructor  \n2: Interface \n3: Access Modifier");
             Console.WriteLine("Enter your choice");
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
@@ -67,6 +67,15 @@ namespace InterfaceAndConstructor
                         s.draw();
                         s = new Triangle();
                         s.draw();
+                        break;
+                    }
+                case 3:
+                    {
+                        AccessModifierClass acc=new AccessModifierClass();
+                        acc.ShowInfo();
+                        CourseClass course=new CourseClass();
+                       course.GetCourseName("C_Sharp Devloper");
+                       // course.Show();
                         break;
                     }
                 default:
